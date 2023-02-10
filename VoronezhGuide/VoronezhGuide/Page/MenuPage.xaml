@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoronezhGuide.MenuPage"
+             BackgroundImageSource="splash2.png">
+
+    <StackLayout Padding="25">
+        
+        <Label x:Name="backButtinToMainPage" Text="≡" TextColor="Black" HorizontalOptions="EndAndExpand" FontSize="70">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ButtonBack_Clicked"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text="-Категории" CharacterSpacing="1.5" TextColor="Black" FontSize="24" FontFamily="AndroidFont"/>
+
+        <Label Text=" туризм" CharacterSpacing="1.5" TextColor="Black" FontSize="24" Padding="10,20,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapTourism_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="whiteWell" Text="+ белый колодец" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapWhiteWell_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="voronezhPalace" Text="+ воронежский дворец" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapVoronezhPalace_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="shipMuseum" Text="+ корабль музей" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapShipMuseum_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text=" еда" TextColor="Black" CharacterSpacing="1.5" FontSize="24" Padding="10,20,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapFood_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="oldCity" Text="+ старый город" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapOldCity_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="artist" Text="+ артист" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapArtist_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text=" развлекательные центры" TextColor="Black" CharacterSpacing="1.5"  FontSize="24" Padding="10,20,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapEntertainmentCenters_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="galleryChizhov" Text="+ галерея чижова" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGalleryChizhov_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="moscowAvenue" Text="+ московский проспект" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapMoscowAvenue_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text=" мероприятия" TextColor="Black" CharacterSpacing="1.5" FontSize="24" Padding="10,20,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapEvents_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="newHorizon" Text="+ новый горизонт" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapNewHorizon_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label x:Name="OldFairyTale" Text="+ cтарая, старая сказка" CharacterSpacing="1.5" TextColor="Black" FontSize="24" IsVisible="false" Padding="20,5,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapOldFairyTale_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Label Text=" о нас" CharacterSpacing="1.5" TextColor="Black" FontSize="24" Padding="0,70,0,0" FontFamily="AndroidFont">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ButtonInfo_Clicked"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+        <Grid VerticalOptions="EndAndExpand">
+            <Image x:Name="logoImage" Source="logo.png" Scale="0.6" IsVisible="true"/>
+            <Label CharacterSpacing="1.5" Text="виртуальный помошник ''Алёнушка''" TextColor="Black" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="End" FontFamily="AndroidFont"/>
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

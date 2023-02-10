@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoronezhGuide.DialogVoronezhPage"
+             BackgroundImageSource="splash2.png">
+  
+    <StackLayout>
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+
+            <Label x:Name="textForDialogVoronezh" FontSize="36" TextColor="Black" Padding="10,100,10,10" FontFamily="AndroidFont"/>
+            
+        </Grid>
+
+        <Button Text="Назад" TextColor="Black" VerticalOptions="EndAndExpand" FontSize="24" Clicked="Button_Clicked"/>
+        
+    </StackLayout>
+</ContentPage>

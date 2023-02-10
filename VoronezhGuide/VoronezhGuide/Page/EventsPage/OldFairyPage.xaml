@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoronezhGuide.Page.EventsPage.OldFairyPage"
+             BackgroundImageSource="splash2.png">
+    <ScrollView x:Name="scrollView">
+        <StackLayout>
+
+            <Label x:Name="backButtinToMainPage" Text="≡" TextColor="Black" HorizontalOptions="EndAndExpand" FontSize="70" Padding="25">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ButtonBack_Clicked"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Text="cтарая, старая сказка" CharacterSpacing="4" TextColor="Black" HorizontalOptions="Center" FontSize="24" Padding="0,0,0,20" FontFamily="AndroidFont"/>
+
+            <Image Source="fairy.jpg"></Image>
+
+            <Label Text="В апреле-мае в рамках областного детского фестиваля «Старая, старая сказка» проводятся заочные областные творческие конкурсы по мотивам русских народных сказок." HorizontalTextAlignment="Center" TextColor="Black" FontSize="20" Padding="0,20,0,0" HorizontalOptions="Center" FontFamily="AndroidFont"/>
+
+            <Label Text="-расположение" CharacterSpacing="4" TextColor="Black" HorizontalOptions="Start" FontSize="24" Padding="25,50,0,20" FontFamily="AndroidFont"/>
+
+            <Image Source="fairykt.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label Text="+интеречные факты" CharacterSpacing="4" TextColor="Black" HorizontalOptions="Start" FontSize="24" Padding="25,70,0,10" FontFamily="AndroidFont">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapFacts_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label x:Name="facts" HorizontalTextAlignment="Center" Text="К участию приглашаются школьники от 6 до 17 лет. Заявки и конкурсные работы принимаются нарочно до 28 апреля по адресу: ул. 9 Января, д.161, региональный центр «Орион», каб. 25. с пометкой «Старая сказка»." TextColor="Black" IsVisible="true" FontSize="20" HorizontalOptions="CenterAndExpand" FontFamily="AndroidFont" Padding="10" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

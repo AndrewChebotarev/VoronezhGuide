@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoronezhGuide.MainPage"
+             BackgroundImageSource="splash.png"
+             Shell.PresentationMode="Modal">
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="25">
+
+        <Grid HorizontalOptions="FillAndExpand">
+
+            <Label Text="+" TextColor="Black" HorizontalOptions="StartAndExpand" FontSize="70">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnButtonToDialogVoronezhPage"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Text="≡" TextColor="Black"  FontSize="70" HorizontalOptions="End">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnButtonMenuPage"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

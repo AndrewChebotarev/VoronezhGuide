@@ -1,4 +1,4 @@
-﻿namespace VoronezhGuide;
+﻿namespace reales;
 
 public partial class AppShell : Shell
 {
